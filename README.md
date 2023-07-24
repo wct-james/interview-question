@@ -74,3 +74,6 @@ id | ebitda_fy22 | ebitda_fy23
 companyid1 | 200 | 300
 
 Would become:
+
+Legacy ID | Company | Fiscal Year | EBITDA
+--- | --- | --- | ---
