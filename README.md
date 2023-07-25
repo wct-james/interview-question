@@ -5,6 +5,23 @@ Data Transformation and data mapping are common tasks in DealCloud implementatio
 
 You will use PyTest to confirm that the shape of the outputted transformation is successful.
 
+## Setup
+First clone this repo to your machine and make a new branch in this repository with your name in it. Then, to set up your environment, make a virtual environment to install dependencies in:
+
+`python -m venv venv`
+
+Then activate the virtual environment
+```bash
+venv/scripts/activate (Powershell (Windows))
+source venv/bin/activate (Linux/OSX)
+```
+With the virtual environment activated, install the dependencies, [Pandas](https://pandas.pydata.org/) and [PyTest](https://docs.pytest.org/en/7.4.x/).
+
+`pip install -r requirements.txt`
+
+After this, you can write your functions as per the below requirements in `main.py`.
+
+
 ## Requirements
 ### 1. Column Renaming
 The column headers need to be renamed as below - FY22, FY23, FY24 can be droppped from the output as they will be addressed later on:
@@ -79,3 +96,14 @@ Legacy ID | Company | Fiscal Year | EBITDA
 --- | --- | --- | ---
 companyid122 | companyid1 | 2022 | 200
 companyid123 | companyid1 | 2023 | 300
+
+## Testing
+Test that the requirements are satisfied using the prepared pytest tests:
+
+`pytest .`
+
+For more detail: 
+
+`pytest . --verbose`
+
+When all test cases pass, push the branch back to the github repo so that it can be reviewed.
