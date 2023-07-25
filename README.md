@@ -1,12 +1,12 @@
-# DealCloud Interview Question Repo
+# Interview Question Repo
 
 ## Introduction
-Data Transformation and data mapping are common tasks in DealCloud implementations. As part of this task, you will generate a random "messy" dataset and be presented with a list of requirements to transform the data.
+Data Transformation and data mapping are common tasks in implementations. As part of this task, you will generate a random "messy" dataset and be presented with a list of requirements to transform the data.
 
 You will use PyTest to confirm that the shape of the outputted transformation is successful.
 
 ## Setup
-First clone this repo to your machine and make a new branch in this repository with your name in it. Then, to set up your environment, make a virtual environment to install dependencies in:
+First fork this repo and clone it to your machine. Then, to set up your environment, make a virtual environment to install dependencies in:
 
 `python -m venv venv`
 
@@ -106,4 +106,6 @@ For more detail:
 
 `pytest . --verbose`
 
-When all test cases pass, push the branch back to the github repo so that it can be reviewed.
+## Submission
+
+When all test cases are passing, raise a pull request into the main repo so that it can be reviewed.
