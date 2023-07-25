@@ -8,7 +8,7 @@ def test_column_names():
 
     clean_companies = company_transformation(companies)
 
-    assert clean_companies.columns == [
+    assert list(clean_companies.columns) == [
         "Legacy ID",
         "Company Name",
         "Company Type",
@@ -61,7 +61,7 @@ def test_company_financials():
 
     clean_company_financials = company_financials_transformation(companies)
 
-    assert clean_company_financials.columns == [
+    assert list(clean_company_financials.columns) == [
         "Legacy ID",
         "Company",
         "Fiscal Year",
