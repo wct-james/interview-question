@@ -77,3 +77,5 @@ Would become:
 
 Legacy ID | Company | Fiscal Year | EBITDA
 --- | --- | --- | ---
+companyid122 | companyid1 | 2022 | 200
+companyid123 | companyid1 | 2023 | 300
