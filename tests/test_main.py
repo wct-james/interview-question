@@ -37,6 +37,7 @@ def test_data_mapping():
         "Healthcare",
         "Infrastructure",
         "General",
+        "Entertainment",
     }
 
     cleaned_geographies = list([
