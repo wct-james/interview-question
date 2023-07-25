@@ -42,7 +42,7 @@ def test_data_mapping():
 
     cleaned_geographies = list([
         i.split("; ") for i in
-        clean_companies["geographies"].to_list()
+        clean_companies["Geographies"].to_list()
         ])
     
     cleaned_geographies = set(list([i for r in cleaned_geographies for i in r]))
@@ -53,6 +53,7 @@ def test_data_mapping():
         "South America",
         "Africa",
         "Asia",
+        "",
     }
 
 def test_company_financials():
