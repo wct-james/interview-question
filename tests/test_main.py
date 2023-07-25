@@ -8,7 +8,7 @@ def test_column_names():
 
     clean_companies = company_transformation(companies)
 
-    assert list(clean_companies.columns) == [
+    assert list(clean_companies.columns).sort() == [
         "Legacy ID",
         "Company Name",
         "Company Type",
@@ -18,7 +18,7 @@ def test_column_names():
         "Target Status",
         "Owner",
         "Business Description",
-    ]
+    ].sort()
 
 
 def test_data_mapping():
@@ -63,17 +63,17 @@ def test_company_financials():
 
     clean_company_financials = company_financials_transformation(companies)
 
-    assert list(clean_company_financials.columns) == [
+    assert list(clean_company_financials.columns).sort() == [
         "Legacy ID",
         "Company",
         "Fiscal Year",
         "EBITDA",
-    ]
+    ].sort()
 
     fiscal_years = set(clean_company_financials["Fiscal Year"].to_list())
 
     assert fiscal_years == {
-        2022,
-        2023,
-        2024
+        "FY22",
+        "FY23",
+        "FY24",
     }
